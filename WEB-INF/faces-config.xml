@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                                  http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+
+
+<!--    <navigation-rule>-->
+<!--        <from-view-id>../Condition.xhtml</from-view-id>-->
+<!--        <navigation-case>-->
+<!--            <from-outcome>Type</from-outcome>-->
+<!--            <if>#{Val.type==2}</if>-->
+<!--            <to-view-id>../mywelcome.xhtml</to-view-id>-->
+<!--        </navigation-case>-->
+<!--        <navigation-case>-->
+<!--            <from-outcome>Type</from-outcome>-->
+<!--            <if>#{Val.admin}</if>-->
+<!--            <to-view-id>../admin.xhtml</to-view-id>-->
+<!--        </navigation-case>-->
+<!--    </navigation-rule>-->
+
+<!--    <lifecycle>-->
+<!--        <phase-listener>-->
+<!--            com.rahul.demo1-->
+<!--        </phase-listener>-->
+<!--    </lifecycle>-->
+
+
+    <application>
+        <system-event-listener>
+            <system-event-listener-class>com.rahul.apllication</system-event-listener-class>
+            <system-event-class>javax.faces.event.PostConstructApplicationEvent</system-event-class>
+        </system-event-listener>
+
+        <system-event-listener>
+            <system-event-listener-class>com.rahul.apllication</system-event-listener-class>
+            <system-event-class>javax.faces.event.PreDestroyApplicationEvent</system-event-class>
+        </system-event-listener>
+    </application>
+</faces-config>

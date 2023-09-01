@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>JSF Template</title>
+</h:head>
+<h:body>
+    <table border="2" align="center" width="100%" style="height: 70px;background-color: blueviolet">
+        <tr>
+            <td align="center">
+                <h2>Welcome to rahul Bhati Code</h2>
+            </td>
+        </tr>
+    </table>
+
+    <table border="1" align="center" width="100%" style="height: 400px">
+        <tr>
+            <td align="center">
+                <ui:include src="sidebar.xhtml"></ui:include>
+            </td>
+
+            <td width="80%" height="200px">
+                <ui:insert name="firstContent">First Content Area  </ui:insert>
+                <ui:insert name="SecondContent">Second Content Area</ui:insert>
+
+            </td>
+        </tr>
+    </table>
+
+
+    <table border="" align="center" width="100%" style="background-color: blue;color: white">
+        <tr>
+            <td align="center">
+                <h3>All Right for rahulbhati Code</h3>
+            </td>
+        </tr>
+    </table>
+</h:body>
+</html>

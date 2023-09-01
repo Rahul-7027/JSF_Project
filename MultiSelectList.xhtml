@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Many Radio Buttons</title>
+</h:head>
+<h:body>
+    <h:form>
+        <h:selectManyListbox value="#{test.manyList}">
+            <f:selectItem itemValue="Ram" itemLabel="Ram"/>
+            <f:selectItem itemValue="Rahul" itemLabel="Rahul"/>
+            <f:selectItem itemValue="Shayam" itemLabel="Shayam"/>
+        </h:selectManyListbox>
+        <h:commandButton value="Submit"/>
+        <h1>Hello , <h:outputText value="#{test.manyList}"/></h1>
+    </h:form>
+</h:body>
+</html>
